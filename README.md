@@ -9,8 +9,8 @@ I’m pursuing opportunities within the IT career Sphere and currently hold a Ba
 - Scripting & automation
 - Customer service–oriented IT problem solving
 
-As well as showcase my desire for continued learning and drive.
-I would also like to state here my intent to pursue Cloud Engineering roles as I hopefully progress throughout my career.
+As well as showcasing my desire for continued learning and drive to succeed.
+I would also like to state my intent to pursue Cloud Engineering roles as I hopefully progress throughout my career.
 
 ---
 
