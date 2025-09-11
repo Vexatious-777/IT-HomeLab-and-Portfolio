@@ -62,7 +62,9 @@ Reusable automation tools:
 - [ ] Learn AWS Basics
 - [ ] Learn Azure Basics
 - [ ] Grow Knowledge Base in preparation for a Cloud Engineering Role
-- [ ] Land an Entry-Level Role (Please?)  
+- [ ] Land an Entry-Level Role (Please?)
+- [ ] No, I'm serious
+- [ ] Improve Resume and Interviewing Skills?  
 
 ---
 
