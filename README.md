@@ -18,9 +18,9 @@ I would also like to state here my intent to pursue Cloud Engineering roles as I
 
 | Project | Description | Tools |
 |---------|-------------|-------|
-| [Diagnostics Script](./projects/diagnostics-script) | PowerShell script to check disk, CPU, RAM, and network health | PowerShell |
-| [Ticketing System Simulation](./projects/ticketing-sim) | ServiceNow/JSM/ZenDesk Practice | JSM, etc.. |
-| [Active Directory Lab](./projects/active-directory-lab) | VM-based AD practice: user accounts, GPOs, permissions | Windows Server, PowerShell |
+| [Diagnostics Script](./Projects/diagnostics-script) | PowerShell script to check disk, CPU, RAM, and network health | PowerShell |
+| [Ticketing System Simulation](./Projects/ticketing-sim) | ServiceNow/JSM/ZenDesk Practice | JSM, etc.. |
+| [Active Directory Lab](./Projects/active-directory-lab) | VM-based AD practice: user accounts, GPOs, permissions | Windows Server, PowerShell |
 
 More to Come
 ---
@@ -29,10 +29,10 @@ More to Come
 
 Quick guides I’ve written (like a mini internal KB):
 
-- [Password Reset Guide](./kb/password_reset.md)   WIP
-- [VPN Setup](./kb/vpn_setup.md)  WIP
-- [Outlook Troubleshooting](./kb/outlook_fixes.md)  WIP
-- [Printer Troubleshooting](./kb/printer_troubleshooting.md)  WIP
+- [Password Reset Guide](./KnowledgeBase/password_reset.md)   WIP
+- [VPN Setup](./KnowledgeBase/vpn_setup.md)  WIP
+- [Outlook Troubleshooting](./KnowledgeBase/outlook_fixes.md)  WIP
+- [Printer Troubleshooting](./KnowledgeBase/printer_troubleshooting.md)  WIP
 
 ---
 
@@ -43,7 +43,7 @@ Study notes & labs:
 - [Networking Basics](./notes/networking.md)   WIP
 - [Windows Troubleshooting](./notes/windows_troubleshooting.md)  WIP
 - [Linux Commands](./notes/linux_basics.md)  WIP
-- [Security Incidents & Response](./notes/security_incidents.md)  WIP
+- [Security Incidents & Response](./notes/security.md)  WIP
 
 ---
 
@@ -71,7 +71,7 @@ Reusable automation tools:
 
 ## 📬 Contact
 
-- **LinkedIn**: [Alexander Griffith](https://www.linkedin.com/in/alexander-griffith-b8a600243)  
+- **LinkedIn**: [Alexander Griffith](https://www.linkedin.com/in/alexg12)  
 - **GitHub**: [Vexatious-777](https://github.com/Vexatious-777)  
 
 ---
