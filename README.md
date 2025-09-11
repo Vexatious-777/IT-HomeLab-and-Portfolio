@@ -1,14 +1,16 @@
-# 💻 IT Help Desk Portfolio — Alexander Griffith
+#  IT Help Desk Portfolio
 
-Welcome!  
 This repository is my learning journey into IT Support & Help Desk fundamentals.  
 It serves as both a **portfolio** of hands-on projects and a **knowledge base** I’ve built while studying and practicing.  
 
-I’m pursuing opportunities in IT Support, Desktop Support, and Help Desk roles. This repo is meant to demonstrate:
+I’m pursuing opportunities within the IT career Sphere and currently hold a Bachelors in Computer Science and am currently working on my Masters in Information Technology This repo is meant to demonstrate:
 - Technical troubleshooting
 - Documentation & knowledge sharing
 - Scripting & automation
 - Customer service–oriented IT problem solving
+
+As well as showcase my desire for continued learning and drive.
+I would also like to state here my intent to pursue Cloud Engineering roles as I hopefully progress throughout my career.
 
 ---
 
@@ -16,20 +18,21 @@ I’m pursuing opportunities in IT Support, Desktop Support, and Help Desk roles
 
 | Project | Description | Tools |
 |---------|-------------|-------|
-| [Diagnostics Script](./projects/diagnostics-script) | PowerShell script to check disk, CPU, RAM, and network health | PowerShell |
-| [Ticketing System Simulation](./projects/ticketing-sim) | ServiceNow/JSM/ZenDesk Practice | N/A |
-| [Active Directory Lab](./projects/active-directory-lab) | VM-based AD practice: user accounts, GPOs, permissions | Windows Server, PowerShell |
+| [Diagnostics Script](./projects/diagnostics-script) | PowerShell script to check disk, CPU, RAM, and network health | PowerShell | WIP
+| [Ticketing System Simulation](./projects/ticketing-sim) | ServiceNow/JSM/ZenDesk Practice | N/A | WIP
+| [Active Directory Lab](./projects/active-directory-lab) | VM-based AD practice: user accounts, GPOs, permissions | Windows Server, PowerShell | WIP
 
+More to Come
 ---
 
 ## 📖 Knowledge Base
 
 Quick guides I’ve written (like a mini internal KB):
 
-- [Password Reset Guide](./kb/password_reset.md)  
-- [VPN Setup](./kb/vpn_setup.md)  
-- [Outlook Troubleshooting](./kb/outlook_fixes.md)  
-- [Printer Troubleshooting](./kb/printer_troubleshooting.md)  
+- [Password Reset Guide](./kb/password_reset.md)   WIP
+- [VPN Setup](./kb/vpn_setup.md)  WIP
+- [Outlook Troubleshooting](./kb/outlook_fixes.md)  WIP
+- [Printer Troubleshooting](./kb/printer_troubleshooting.md)  WIP
 
 ---
 
@@ -37,10 +40,10 @@ Quick guides I’ve written (like a mini internal KB):
 
 Study notes & labs:
 
-- [Networking Basics](./notes/networking.md)  
-- [Windows Troubleshooting](./notes/windows_troubleshooting.md)  
-- [Linux Commands](./notes/linux_basics.md)  
-- [Security Incidents & Response](./notes/security_incidents.md)  
+- [Networking Basics](./notes/networking.md)   WIP
+- [Windows Troubleshooting](./notes/windows_troubleshooting.md)  WIP
+- [Linux Commands](./notes/linux_basics.md)  WIP
+- [Security Incidents & Response](./notes/security_incidents.md)  WIP
 
 ---
 
@@ -48,8 +51,8 @@ Study notes & labs:
 
 Reusable automation tools:
 
-- [cleanup_temp.ps1](./scripts/cleanup_temp.ps1) — clears Windows temp files  
-- [check_updates.sh](./scripts/check_updates.sh) — checks for Linux package updates  
+- [cleanup_temp.ps1](./scripts/cleanup_temp.ps1) — clears Windows temp files  WIP
+- [check_updates.sh](./scripts/check_updates.sh) — checks for Linux package updates  WIP
 
 ---
 
@@ -62,9 +65,7 @@ Reusable automation tools:
 - [ ] Learn AWS Basics
 - [ ] Learn Azure Basics
 - [ ] Grow Knowledge Base in preparation for a Cloud Engineering Role
-- [ ] Land an Entry-Level Role (Please?)
-- [ ] No, I'm serious
-- [ ] Improve Resume and Interviewing Skills?  
+- [ ] Include Cloud Based Projects in the near future
 
 ---
 
@@ -75,4 +76,4 @@ Reusable automation tools:
 
 ---
 
-⭐ If you’re an employer, recruiter, or fellow learner — I’d love feedback and collaboration!
+ If you’re an employer, recruiter, or fellow learner — I’d love feedback and collaboration!
