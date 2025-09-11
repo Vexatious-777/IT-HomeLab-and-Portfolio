@@ -17,7 +17,7 @@ I’m pursuing opportunities in IT Support, Desktop Support, and Help Desk roles
 | Project | Description | Tools |
 |---------|-------------|-------|
 | [Diagnostics Script](./projects/diagnostics-script) | PowerShell script to check disk, CPU, RAM, and network health | PowerShell |
-| [Ticketing System Simulation](./projects/ticketing-sim) | Simple Python app for logging/resolving IT tickets | Python |
+| [Ticketing System Simulation](./projects/ticketing-sim) | ServiceNow/JSM/ZenDesk Practice | N/A |
 | [Active Directory Lab](./projects/active-directory-lab) | VM-based AD practice: user accounts, GPOs, permissions | Windows Server, PowerShell |
 
 ---
@@ -58,7 +58,11 @@ Reusable automation tools:
 - [ ] Build a more advanced PowerShell Help Desk toolkit  
 - [ ] Expand KB to include Teams/SharePoint issues  
 - [ ] Practice with Azure Active Directory  
-- [ ] Document phishing simulation + response  
+- [ ] Document phishing simulation + response
+- [ ] Learn AWS Basics
+- [ ] Learn Azure Basics
+- [ ] Grow Knowledge Base in preparation for a Cloud Engineering Role
+- [ ] Land an Entry-Level Role (Please?)  
 
 ---
 
