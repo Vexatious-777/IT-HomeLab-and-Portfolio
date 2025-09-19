@@ -1,5 +1,7 @@
-The goal of this section is have a Script for Windows (PowerShell) & Linux (Bash) that can be run to collect System Diagnostics.
-They are also meant to be extendible, so that as needs for the diagnostics script change due to ticket context it can be modified.
+The goal of this section is have a Script for Windows (PowerShell) 
+& Linux (Bash) that can be run to collect System Diagnostics.
+They are also meant to be extendible, 
+so that as needs for the diagnostics script change due to ticket context it can be modified.
 
 
 ## For PowerShell Script (Windows OS)
