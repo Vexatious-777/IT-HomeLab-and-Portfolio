@@ -1,1 +1,58 @@
+The goal of this section is have a Script for Windows (PowerShell) that can be used to collect System Diagnostics.
+It can also be modified if the needs of the diagnostics script change due to context it can be modified.
 
+
+## For PowerShell Script (Windows OS)
+
+<#  
+.SYNOPSIS
+  Quick Windows diagnostics for IT Help Desk/HomeLab
+.DESCRIPTION
+  Gathers system, network, and performance info and writes to a timestamped
+  file inside a "Diagnostics" folder on the current user's Desktop.
+.EXAMPLE
+  .\System-Diagnostics.ps1
+#>
+
+# --- Build path & file name ---
+$DiagnosticsFolder = Join-Path -Path ([Environment]::GetFolderPath('Desktop')) -ChildPath 'Diagnostics'
+$TimeStamp         = Get-Date -Format 'yyyy-MM-dd-HH-mm-ss'
+$LogPath           = Join-Path -Path $DiagnosticsFolder -ChildPath ("DiagReport-{0}.txt" -f $TimeStamp)
+
+# Ensure the folder exists
+if (-not (Test-Path $DiagnosticsFolder)) {
+    New-Item -ItemType Directory -Path $DiagnosticsFolder | Out-Null
+}
+
+# --- Collect diagnostics ---
+$report  = "Diagnostics run at $(Get-Date)`n"
+
+# OS & Hardware
+$report += "`n=== SYSTEM INFO ===`n"
+$report += (Get-ComputerInfo |
+            Select-Object CsName, WindowsVersion, OsArchitecture, CsProcessors, CsTotalPhysicalMemory |
+            Out-String)
+
+# CPU & Memory usage
+$report += "`n=== PERFORMANCE ===`n"
+$cpu = Get-Counter '\Processor(_Total)\% Processor Time'
+$mem = Get-Counter '\Memory\Available MBytes'
+$report += ("CPU Load  : {0:N2}%%`n" -f $cpu.CounterSamples.CookedValue)
+$report += ("Free RAM  : {0} MB`n"  -f $mem.CounterSamples.CookedValue)
+
+# Disk health
+$report += "`n=== DISK ===`n"
+$report += (Get-Volume |
+            Select-Object DriveLetter, FileSystemLabel, SizeRemaining, Size |
+            Format-Table -AutoSize | Out-String)
+
+# Network
+$report += "`n=== NETWORK ===`n"
+$report += (Get-NetIPAddress -AddressFamily IPv4 |
+            Select-Object InterfaceAlias, IPAddress |
+            Out-String)
+$report += (Test-NetConnection www.google.com -WarningAction SilentlyContinue | Out-String)
+
+# --- Output ---
+$report | Out-File -FilePath $LogPath -Encoding UTF8
+Write-Host "Diagnostics written to: $LogPath"
