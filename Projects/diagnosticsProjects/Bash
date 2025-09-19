@@ -1,1 +1,60 @@
+*** WIP ***
 
+I currently do not have a Linux Machine Physically
+But am looking to either set-up a VM to test this
+or find a cleaner solution.
+
+
+#!/usr/bin/env bash
+#
+# Quick Linux diagnostics for Help Desk / HomeLab
+# Creates ~/Desktop/Diagnostics/DiagReport-YYYY-MM-DD-HH-MM-SS.txt
+#
+
+# ----- Build folder and file name -----
+DESKTOP_DIR="${HOME}/Desktop"
+DIAG_FOLDER="${DESKTOP_DIR}/Diagnostics"
+
+# timestamp like 2025-09-19-11-14-01
+STAMP=$(date '+%Y-%m-%d-%H-%M-%S')
+LOGFILE="${DIAG_FOLDER}/DiagReport-${STAMP}.txt"
+
+# Ensure the folder exists
+mkdir -p "$DIAG_FOLDER"
+
+# ----- Collect diagnostics -----
+{
+echo "Diagnostics run at $(date)"
+echo
+
+echo "=== SYSTEM INFO ==="
+# hostnamectl works on most modern distros; fall back to uname if not found
+if command -v hostnamectl >/dev/null 2>&1; then
+    hostnamectl
+else
+    uname -a
+fi
+echo
+
+echo "=== PERFORMANCE ==="
+echo "CPU Load : $(uptime | awk -F'load average:' '{print $2}')"
+echo "Memory   :"
+free -h
+echo
+
+echo "=== DISK ==="
+df -hT
+echo
+
+echo "=== NETWORK ==="
+ip -4 addr show
+echo "Ping test to google.com:"
+ping -c 4 google.com || echo "Ping failed"
+} > "$LOGFILE"
+
+echo "Diagnostics written to: $LOGFILE"
+
+
+To use this script run it in Bash and change the [FileName] variable to whatever you name the script:
+chmod +x [fileName].sh
+./[fileName].sh
