@@ -1,1 +1,28 @@
+Printer Troubleshooting:
+Common Symptoms:
+ - Printer offline / not found
+ - Stuck print queue
+ - Poor print quality (streaks, faded text)
 
+Quick Fix Checklist:
+
+Physical Checks:
+- Verify power and network/USB cables.
+- Ensure the printer is on the same Wi-Fi/VLAN as the user’s device.
+
+Queue & Driver:
+
+In a PowerShell Script run the following to reset the Spooler
+# Windows – clear queue
+net stop spooler
+del %systemroot%\System32\spool\PRINTERS\* /Q
+net start spooler
+
+Update or reinstall the printer driver.
+
+Test Print:
+- From OS printer settings, print a test page.
+ - If still failing, try a different user profile or device to isolate.
+
+Hardware:
+Check toner/ink levels, paper jams, and clean rollers if output is streaked.
