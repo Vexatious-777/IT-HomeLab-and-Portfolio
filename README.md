@@ -18,7 +18,7 @@ I would also like to state my intent to pursue Cloud Engineering roles as I hope
 
 | Project | Description | Tools |
 |---------|-------------|-------|
-| [Diagnostics Script](./Projects/diagnostics-script) | PowerShell script to check disk, CPU, RAM, and network health | PowerShell |
+| [Diagnostics Script](./Projects/diagnosticsProjects) | PowerShell script to check disk, CPU, RAM, and network health | PowerShell |
 | [Ticketing System Simulation](./Projects/ticketing-sim) | ServiceNow/JSM/ZenDesk Practice | JSM, etc.. |
 | [Active Directory Lab](./Projects/active-directory-lab) | VM-based AD practice: user accounts, GPOs, permissions | Windows Server, PowerShell |
 
